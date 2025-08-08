@@ -1,0 +1,36 @@
+{
+  "name": "itinerary-generator",
+  "version": "1.0.0",
+  "description": "AI-powered itinerary suggestion microservice for TripCraft application",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "health": "curl http://localhost:3003/health",
+    "test": "jest"
+  },
+  "keywords": [
+    "microservice",
+    "itinerary",
+    "travel",
+    "ai-suggestions",
+    "gemini-ai",
+    "trip-planning"
+  ],
+  "author": "Matthew Clarke",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "@google/generative-ai": "^0.2.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  }
+}
